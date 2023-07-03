@@ -1,4 +1,5 @@
 package airlines;
+import airlines.pojos.Airline;
 import utils.DateUtils;
 import utils.RandomDataGenerator;
 import utils.RandomDataTypeNames;
@@ -50,5 +51,19 @@ public class Payloads {
         payload.put("website", RandomDataGenerator.getRandomWebsiteName());
         payload.put("established", RandomDataGenerator.getRandomNumber(1900, DateUtils.getCurrentYear()));
         return payload;
+    }
+
+    public static Airline getCreateAirlinePayloadFromPojo(){
+        return Airline
+                .builder()
+                .id(Integer.parseInt(RandomDataGenerator.getRandomNumber(6)))
+                .name(RandomDataGenerator.getRandomDataFor(RandomDataTypeNames.FIRSTNAME))
+                .country(RandomDataGenerator.getRandomDataFor(RandomDataTypeNames.COUNTRY))
+                .logo(RandomDataGenerator.getRandomAlphabets(25))
+                .slogan(RandomDataGenerator.getRandomAlphabets(20))
+                .head_quaters(RandomDataGenerator.getRandomDataFor(RandomDataTypeNames.CITYNAME))
+                .website(RandomDataGenerator.getRandomWebsiteName())
+                .established(String.valueOf(RandomDataGenerator.getRandomNumber(1900, DateUtils.getCurrentYear())))
+                .build();
     }
 }

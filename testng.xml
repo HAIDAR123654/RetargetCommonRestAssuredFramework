@@ -10,6 +10,12 @@
             <class name="airlines.AirlineTests">
                 <methods>
                     <include name="createAirline"/>
+                    <include name="createAirlineAndVerifyResponse"/>
+                </methods>
+            </class>
+            <class name="airlines.AirlineTestsNew">
+                <methods>
+                    <include name="createAirlineAndVerify"/>
                 </methods>
             </class>
         </classes>
