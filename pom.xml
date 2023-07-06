@@ -38,6 +38,9 @@
         <lombokVersion>1.18.24</lombokVersion>
         <apacheCommonLangVersion>3.12.0</apacheCommonLangVersion>
         <javersVersion>6.12.0</javersVersion>
+        <poi>5.2.3</poi>
+        <ooxml>5.2.3</ooxml>
+        <poiji>4.1.1</poiji>
     </properties>
     <dependencies>
         <dependency>
@@ -60,6 +63,24 @@
             <artifactId>javers-core</artifactId>
             <version>${javersVersion}</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.ozlerhakan</groupId>
+            <artifactId>poiji</artifactId>
+            <version>${poiji}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${ooxml}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.projectlombok</groupId>

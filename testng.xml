@@ -7,13 +7,19 @@
     <test verbose="2" preserve-order="true"
           name="D:/RestAssuredFramework/RetargetCommonRestAssuredFramework/src/test/java/airlines/AirlineTests.java">
         <classes>
-            <class name="airlines.AirlineTests">
-                <methods>
-                    <include name="createAirline"/>
-                    <include name="createAirlineAndVerifyResponse"/>
-                </methods>
-            </class>
-            <class name="airlines.AirlineTestsNew">
+<!--            <class name="airlines.AirlineTests">-->
+<!--                <methods>-->
+<!--                    <include name="createAirline"/>-->
+<!--                    <include name="createAirlineAndVerifyResponse"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="airlines.AirlineTestsNew">-->
+<!--                <methods>-->
+<!--                    <include name="createAirlineAndVerify"/>-->
+<!--                    <include name="createAirlineAndVerifyPoiji"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="airlines.AirlineTestsScenarios">
                 <methods>
                     <include name="createAirlineAndVerify"/>
                 </methods>
